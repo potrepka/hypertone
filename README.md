@@ -35,6 +35,6 @@ but I've chosen to upload this code as a solid reference for using HSC3 in
 conjunction with Tidal. Can be super useful for live coding. This project also
 uses Gloss, which is a wonderful library as well.
 
-## LICENSE
+## License
 
-GPL-3
+GNU General Public License v3.0
