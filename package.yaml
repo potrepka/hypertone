@@ -1,0 +1,55 @@
+name:                hypertone
+version:             0.1.0
+github:              "nspotrepka/hypertone"
+license:             GPL-3
+author:              "Nathaniel Potrepka"
+maintainer:          "nspotrepka@gmail.com"
+copyright:           "Copyright (c) 2018 Nathaniel Potrepka"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+# metadata to be used when publishing your package
+# synopsis:            Short description of your package
+# category:            Sound
+
+description:         Please see the README on Github at <https://github.com/nspotrepka/hypertone#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- containers >= 0.5.7.1
+- data-default >= 0.5
+- gloss >= 1.12.0.0
+- grenade >= 0.1.0
+- hmidi >= 0.2.2.1
+- hosc >= 0.16
+- hsc3 >= 0.16
+- hsc3-process >= 0.10.0
+- multimap >= 1.2.1
+- tidal >= 0.9.9
+
+library:
+  source-dirs: src
+
+executables:
+  hypertone-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -O2 -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - hypertone
+
+tests:
+  hypertone-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -O2 -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - hypertone

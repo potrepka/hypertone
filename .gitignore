@@ -1,0 +1,5 @@
+.stack-work/
+hypertone.cabal
+*~
+src/Testing.hs
+src/Sound/Hypertone/OSC.hs
