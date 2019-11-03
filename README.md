@@ -30,10 +30,10 @@ stack exec hypertone-exe
 
 ## Usage
 
-This project is not finished! I've abandoned the project in favor of using C++,
-but I've chosen to upload this code as a solid reference on how to use HSC3
-together with Tidal. Can be super useful for live coding. This project also uses
-Gloss, which is a wonderful library as well.
+This project is not finished! I've abandoned the project in favor of C++, but
+I've chosen to upload this code as a solid reference on how to use HSC3
+together with Tidal, as it can be super useful for live coding. This project
+also depends on Gloss, which is a wonderful library for graphics.
 
 ## License
 
